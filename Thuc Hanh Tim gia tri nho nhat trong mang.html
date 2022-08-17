@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nhỏ nhất</title>
+</head>
+<body>
+<script>
+  let a = [5,8,9,6,-5,898,6,48,6,2,46,4,2];
+  function min1(a) {
+    let min = a[0];
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] < min){
+        min = a[i]
+      }
+    }
+    return min
+  }
+  let min = min1(a)
+  alert(min)
+
+</script>
+</body>
+</html>
