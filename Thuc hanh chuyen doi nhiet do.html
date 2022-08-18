@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<h2>Temperature Converter</h2>
+<p>Nhập giá trị cần chuyển đổi</p>
+Fahenheit <input type="number" id="doF" oninput="thaydoinhietdo(this.value)" onchange="thaydoinhietdo(this.value)">
+<p>Celcius: <span  id="doC"></span></p>
+<script>
+function thaydoinhietdo(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("doC").innerHTML = (valNum - 32) * 1.8;
+
+}
+</script>
+</body>
+</html>
