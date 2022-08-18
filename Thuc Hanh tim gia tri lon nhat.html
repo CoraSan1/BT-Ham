@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất</title>
+</head>
+<body>
+<script>
+  let a = [8,5,6,89,46,5,4,12,3,2,19,199];
+  check();
+  function check() {
+    let max = 0;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] > max){
+        max = a[i];
+      }
+    }
+    return max
+  }
+  let kq = check();
+  document.write(check());
+
+</script>
+</body>
+</html>
